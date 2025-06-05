@@ -1,0 +1,11 @@
+{
+  "name": "js-fundamentals-project",
+  "version": "1.0.0",
+  "description": "A project to practice JavaScript fundamentals including variables, functions, arrays, objects, DOM manipulation, and event handling.",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
