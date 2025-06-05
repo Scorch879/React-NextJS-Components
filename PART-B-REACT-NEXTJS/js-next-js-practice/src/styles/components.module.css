@@ -1,0 +1,213 @@
+.mainBg {
+  min-height: 100vh;
+  background: linear-gradient(123deg, #fcc145 50%, #ed783c 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: 2.5px solid #fc8c2b;
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  margin: 1.5rem 0;
+  background: #fff8f0;
+  box-shadow: 0 4px 18px 0 rgba(252,140,43,0.10), 0 1.5px 6px 0 #fcc145;
+  position: relative;
+}
+.card:hover{
+    border: 2.5px solid #ff3131;
+    box-shadow: 0 6px 24px 0 rgba(237,120,60,0.18), 0 2px 8px 0 #fcc145;
+}
+
+.welcomeCard{
+  
+  border: 1px solid #ff3131;
+
+}
+
+.card h2 {
+  margin-top: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Arial Rounded MT Bold', Arial, sans-serif;
+  color: #fc8c2b;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+.card h2::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 5px;
+  background: linear-gradient(90deg, #fcc145 40%, #ff3131 100%);
+  border-radius: 3px;
+  margin-top: 0.2em;
+}
+
+.card button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #0070f3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card input {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.flexRow {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+}
+
+.preview {
+  flex: 1;
+  min-width: 280px;
+  padding: 1.5rem;
+  background: #fff3e6;
+  border-radius: 14px;
+  border: 2px solid #fcc145;
+  box-shadow: 0 2px 8px rgba(252,140,43,0.10);
+}
+
+.preview h3 {
+  margin-top: 0;
+  color: #ed783c;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Arial Rounded MT Bold', Arial, sans-serif;
+  border-bottom: 2.5px solid #ff3131;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.previewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.previewItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  border-radius: 6px;
+  border: 1.5px solid #fcc145;
+  box-shadow: 0 1px 3px rgba(252,140,43,0.06);
+}
+
+.previewItem strong {
+  color: #fc8c2b;
+  font-size: 1rem;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+.previewItem p {
+  margin: 0;
+  color: #ed783c;
+  font-size: 1.05rem;
+}
+
+.placeholder {
+  color: #fcc145;
+  font-style: italic;
+}
+
+.form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: #ed783c;
+  font-size: 1rem;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+.inputGroup input {
+  padding: 0.85rem;
+  border: 2px solid #fcc145;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  transition: all 0.2s ease;
+  background: #fff;
+  color: #ed783c;
+  font-family: inherit;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #ff3131;
+  box-shadow: 0 0 0 2px rgba(252,140,43,0.13);
+}
+
+.inputGroup input:hover {
+  border-color: #fc8c2b;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  padding: 0.85rem 1.7rem;
+  background: linear-gradient(90deg, #fcc145 60%, #fc8c2b 100%);
+  color: #ff3131;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 700;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Arial Rounded MT Bold', Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(252,140,43,0.10);
+  letter-spacing: 1px;
+}
+
+.card button:hover {
+  background: linear-gradient(90deg, #ff3131 40%, #fcc145 100%);
+  color: #fff;
+  transform: translateY(-1px) scale(1.04);
+}
+
+.card button:active {
+  transform: translateY(0) scale(1);
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.logoImg {
+  border-radius: 18px;
+  box-shadow: 0 4px 18px 0 rgba(252,140,43,0.13);
+  background: #fff3e6;
+  border: 2.5px solid #fcc145;
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+
