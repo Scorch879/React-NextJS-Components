@@ -1,4 +1,4 @@
-# Next.js Student Information App
+# React / NextJS App
 
 ## Overview
 This project is a Next.js application that allows users to input and preview student information. It features a modern UI with a header, tabbed navigation, and responsive design.
