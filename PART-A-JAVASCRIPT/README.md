@@ -2,18 +2,6 @@
 
 A hands-on project designed to practice and demonstrate core JavaScript concepts including variables, functions, arrays, objects, DOM manipulation, and event handling.
 
-## Project Structure
-
-```
-├── src/
-│   ├── index.html      # Main application page
-│   ├── sample.html     # Sample HTML template
-│   ├── ambot.css       # Styling for the application
-│   └── calculator.js   # JavaScript implementation
-├── package.json        # Project configuration
-└── README.md          # Project documentation
-```
-
 ## Features
 
 - Interactive calculator implementation
@@ -46,7 +34,3 @@ This project serves as a practical implementation of JavaScript fundamentals, pr
 - DOM element selection and modification
 - Event listeners and handlers
 - CSS styling and layout
-
-## License
-
-This project is licensed under the ISC License.
