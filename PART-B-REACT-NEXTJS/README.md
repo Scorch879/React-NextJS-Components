@@ -61,6 +61,3 @@ This project is a Next.js application that allows users to input and preview stu
 - **Next.js:** A React framework for building server-rendered applications.
 - **React:** A JavaScript library for building user interfaces.
 - **React DOM:** A package that provides DOM-specific methods for React.
-
-## License
-This project is licensed under the ISC License.
