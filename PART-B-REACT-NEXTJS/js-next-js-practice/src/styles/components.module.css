@@ -1,31 +1,44 @@
-.mainBg {
-  min-height: 100vh;
-  background: linear-gradient(123deg, #fcc145 50%, #ed783c 100%);
+.centered {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .card {
-  border: 2.5px solid #fc8c2b;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  width: 100%;
+  color: #fff;
   border-radius: 18px;
-  padding: 2rem 2.5rem;
-  margin: 1.5rem 0;
-  background: #fff8f0;
-  box-shadow: 0 4px 18px 0 rgba(252,140,43,0.10), 0 1.5px 6px 0 #fcc145;
-  position: relative;
-}
-.card:hover{
-    border: 2.5px solid #ff3131;
-    box-shadow: 0 6px 24px 0 rgba(237,120,60,0.18), 0 2px 8px 0 #fcc145;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.18), 0 1.5px 4px rgba(0,0,0,0.12);
+  padding: 2.5rem 2rem;
+  margin: 2rem 0; /* Remove auto to avoid extra centering issues */
+  max-width: 900px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.welcomeCard{
-  
-  border: 1px solid #ff3131;
 
+.card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.22), 0 2px 8px rgba(0,0,0,0.16);
 }
+
+.welcomeCard h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffd700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.welcomeCard p {
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
 
 .card h2 {
   margin-top: 0;
@@ -192,22 +205,102 @@
   transform: translateY(0) scale(1);
 }
 
-.logoWrapper {
+@media (max-width: 600px) {
+  .flexRow {
   display: flex;
-  justify-content: center;
+  gap: 2.5rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+  }
+}
+
+.tabPanel .flexRow {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+}
+
+.tabControl {
+  width: 100%;
+  max-width: auto;
+  margin: 2rem 0;
+  background: #232526;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 0.5rem;
+  transition: max-width 0.3s;
+}
+.tabPanel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center cards inside the panel */
+  background: #232526;
+  border-radius: 0 0 12px 12px;
+  padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+  color: #fff;
+  box-sizing: border-box;
 }
 
-.logoImg {
-  border-radius: 18px;
-  box-shadow: 0 4px 18px 0 rgba(252,140,43,0.13);
-  background: #fff3e6;
-  border: 2.5px solid #fcc145;
-  width: 120px;
-  height: 100px;
-  object-fit: contain;
+.tabList {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.tabButton {
+  flex: 1 1 0;
+  width: 100%;
+  background: #414345;
+  color: #ffd700;
+  border: 0.5px solid white;
+  border-radius: 8px 8px 0 0;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  text-align: center;
+  min-width: 0; /* Prevent overflow */
+}
+
+.tabButton:hover,
+.tabButton:focus {
+  background: #fcc145;
+  color: #232526;
+}
+
+.activeTab {
+  background: #ffd700;
+  color: #232526;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(252,140,43,0.10);
+}
+
+.tabPanel {
+  background: #232526;
+  border-radius: 0 0 12px 12px;
+  padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+  color: #fff;
 }
 
 
-
+.fullWidth {
+  max-width: none;
+  width: 100vw;
+  border-radius: 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  /* Optional: add horizontal padding */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

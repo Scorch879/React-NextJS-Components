@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
-import Image from 'next/image';
-import styles from '../styles/components.module.css';   
+import styles from '../styles/components.module.css';  
 
 export default function StudentInfo({ setName }) {
    const [studentInfo, setStudentInfo] = useState({
@@ -32,9 +31,6 @@ export default function StudentInfo({ setName }) {
 
    return (
       <div className={styles.card}>
-         <div className={styles.logoWrapper}>
-            <Image src="/images/buck_yourself.png" alt="Buck Logo" width={100} height={100} className={styles.logoImg} priority />
-         </div>
          <h2>Student Information</h2>
          <div className={styles.flexRow}>
             {/* Preview Card */}
